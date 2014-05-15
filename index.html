@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="Selfie">
+<head>
+<title>&lt;selfie&gt;</title>
+<style>
+body  { text-align: center; }
+selfie 
+{
+  margin: 2em auto 0;
+  width: 600px;
+  padding: 2em;
+  background: white;
+  border: 1px solid black;
+  display: block;
+  text-align: center;
+}
+button {
+	display: inline-block;
+}
+canvas, video {
+	width: 500px;
+	display: block;
+	margin: 0 auto;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+<script src="selfie.js"></script>
+</head>
+<body>
+	
+<h1>Presenting: Selfie.js</h1>
+
+<p>An angular.js module that allows your users to create and save a selfie with their webcam via the getUserMedia() API</p>
+<p>Usage: Include angular.js and selfie.js, Embed an &lt;selfie /&gt; tag in your template</p>
+<p>Grant webcam usage permissions and show your best duckface</p>
+
+<h1>Demo</h1> 
+<selfie />
+    
+</body>
+</style>
